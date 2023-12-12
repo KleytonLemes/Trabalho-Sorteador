@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/2-Style.css">
+
+    <script src="/3-Script.js" defer> </script>
+    <script src="/4-EsconderDiv.js" defer></script>
+
+    <title> Sorteio S.A. </title>
+</head>
+<body>
+    
+    <div class="contTitulo">
+        <h1> Sorteio de Brindes </h1>
+    </div>
+
+    <div class="contBtsEsconderDiv">
+        <div id="btn"> 
+            <img class="iconeIngrenagem" src="https://w7.pngwing.com/pngs/569/864/png-transparent-computer-icons-installation-settings-thumbnail.png" alt="">
+        </div>
+    </div>
+    
+    <section class="contBts">
+        <div id="container" style="display: none" aria-placeholder="TESTE">
+            <div class="contBtDentro">
+                <button id="btnParticipantes"> Participante </button>
+            </div>
+            
+            <div class="contBtDentro">
+                <button id="btnHistotico"> Histórico </button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contCadastro">
+        <div>
+            <label for="nomeParticipante"> </label>
+            <input id="nomeParticipante" placeholder="Nome do Participante" type="text" >
+        </div>
+
+        <div>
+            <label for="indiceParticipante"> </label>
+            <input id="indiceParticipante" placeholder="Número do Participante" type="number" min="1" max="10">
+        </div>
+
+        <div>
+            <button onclick="adicionarParticipante()" class="btAddParticipante"> Adicionar Participante </button>
+        </div>
+    </section>    
+    
+    <div class="contBtSortear">
+        <button onclick="sortearParticipante()" class="btSortear"> SORTEAR </button>
+    </div>
+
+    
+    <div id="containerParticipantes" style="display: none;">
+        <h2> Lista de Participantes </h2>
+        <ul id="listaParticipantes"></ul>
+    </div>
+    
+    <div id="containerHistorico" style="display: none;">
+        <h2> Histórico de Cadastro </h2>
+        <ul id="historicoCadastro"></ul>
+    </div>
+
+    <section class="contResultado">
+        <div class="contTituloResultado">
+            <h3> Participante Sorteado </h3>
+        </div>
+        
+        <div class="contSaidaResultado">
+            <div id="infoParticipantesNumero"></div>
+            <div id="infoParticipantes"></div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-bottom">
+            
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Sorteio de Brindes</h3>
+            <p>Um site dedicado a realizar sorteios de brindes incríveis!</p>
+          </div>
+          <div class="footer-team">
+            <h4> Equipe </h4>
+            <ul>
+              <li> Kleyton </li>
+              <li> Lemes </li>
+              <li> Rosa </li>
+            </ul>
+          </div>
+        </div>
+        <p> &copy; 2023 Sorteio de Brindes SENAI </p>
+      </footer>
+      
+    
+</body>
+</html>

@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;800&family=Inter:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    font-family: 'Kanit', sans-serif;
+    
+    height: 100vh;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.contTitulo{
+    text-align: center;
+    padding: 2vh;
+}
+
+.contCadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 3vh;
+}
+
+#nomeParticipante, #indiceParticipante, .btAddParticipante, .btSortear {
+    width: 225px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: solid 1px rgb(0, 0, 0);
+}
+
+.btAddParticipante{
+    border: solid 1px rgba(0, 0, 0, 0);
+    background: rgb(42, 211, 26);
+}
+.btAddParticipante:hover{
+    background-color: rgb(18, 190, 41);
+    color: white;
+    transform: scale(1.1);
+    transition: 300ms;
+    box-shadow: 0 0 30px black;
+}
+
+.contBtSortear{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px
+}
+
+.btSortear{
+    background-color: #dab821e6;
+}
+.btSortear:hover{
+    background-color: #d48919;
+    color: white;
+    transform: scale(1.1);
+    transition: 300ms;
+    box-shadow: 0 0 30px black;
+}
+
+.contResultado{
+    height: 40vh;
+    margin: 31px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.contTituloResultado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+
+
+.contSaidaResultado{
+    height: 47vh;
+    margin: 30px;
+    border: solid 1px black;
+    width: 82vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#infoParticipantesNumero, #infoParticipantes{
+    text-align: center;
+    font-size: 35px;
+}
+
+.contBtsEsconderDiv{
+    position: absolute;
+    right: 1%;
+    top: 20px;
+
+}
+
+.iconeIngrenagem{
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+}
+.iconeIngrenagem:hover{
+    transform: scale(1.3);
+    transition: 500ms;
+    box-shadow: 0 0 30px black;
+    cursor: pointer;
+}
+
+.contBts{
+    position: fixed;
+    right: 1%;
+}
+
+.contBtDentro{
+    padding: 5px;
+}
+
+#btnParticipantes, #btnHistotico{
+    width: 116px;
+    height: 38px;
+}
+
+#containerParticipantes{
+    position: absolute;
+    top: 2px;
+
+}
+
+#containerParticipantes h2, #containerHistorico h2 {
+    font-size: 13px;    
+}
+
+#listaParticipantes, #historicoCadastro{
+    font-size: 10px;
+}
+
+#containerHistorico{
+    position: absolute; 
+    top: 2px; 
+    left: 150px; 
+}
+
+
+
+
+
+footer {
+    position: relative;
+    top: -12px;
+
+    background-color: #989898;
+    color: #333;
+    text-align: center;
+}
+  
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+.footer-info, .footer-team {
+    margin: 0px;
+}
+  
+.footer-info h3 {
+    margin-bottom: 0px;
+    font-size: 10px;
+}
+
+.footer-info p {
+    margin-bottom: 0px;
+    font-size: 8px;
+}
+  
+.footer-team h4 {
+    margin-bottom: 0px;
+    font-size: 10px;
+}
+  
+  .footer-team ul {
+    list-style: none;
+    font-size: 8px;
+  }
+  
+  .footer-team ul li {
+    margin-bottom: 0px;
+  }
+  
+  .footer-bottom {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 0.9em;
+  }
+  
