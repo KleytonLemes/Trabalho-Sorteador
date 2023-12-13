@@ -114,8 +114,8 @@ body{
 
 .iconeIngrenagem{
     border-radius: 100%;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
 }
 .iconeIngrenagem:hover{
     transform: scale(1.3);
