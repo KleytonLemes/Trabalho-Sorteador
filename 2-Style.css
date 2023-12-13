@@ -69,7 +69,7 @@ body{
 }
 
 .contResultado{
-    height: 40vh;
+    height: 38vh;
     margin: 31px;
 
     display: flex;
@@ -164,7 +164,7 @@ body{
 
 footer {
     position: relative;
-    top: 0px;
+    top: 2px;
 
     background-color: #989898;
     color: #333;
